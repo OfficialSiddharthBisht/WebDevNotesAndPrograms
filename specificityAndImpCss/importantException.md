@@ -4,3 +4,9 @@ When !important rule is used in on a style declaration , this overrides any othe
 
 Technically !important has nothing to do with specificity
 Using !important is a bad practice and should be avoided 
+
+Syantax :- 
+
+div > #hello {
+    color: green !important; 
+}
