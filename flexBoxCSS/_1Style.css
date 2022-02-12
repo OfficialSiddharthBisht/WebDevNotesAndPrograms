@@ -1,0 +1,38 @@
+.flex-container{
+    display: flex;
+    border: 2px solid grey;
+    height: 45vh;
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    justify-content: center;
+    justify-content:space-evenly;
+    /*  this will put the items in horizontally centre */
+    /* align-items: center;   */
+    /* this will put all the item in vertically centre */
+
+    /* ? When we will see the same items in mobile then it will shrink to keep that right so it does not shring and come to another line flex wrap */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* This will reverse the order from down to up eg - : 4 3 2 1  */
+
+    /* flex-flow: column wrap; */
+
+    /* flex-flow: row wrap; */
+}
+
+.flex-item{
+    background-color: red;
+    border: 2px solid black;
+    margin: 12px;
+    width: 122px;
+    height: 122px;
+}
+/* #cls{
+    flex-grow: 3;
+} */
+/* We can also change the properties of individual elements like flex-grow  --> it will change the size of the item of 3 times of it , flexshrink is also an option but will shrink when we well decrease the screen size  */
+
+#third{
+    align-self: center;
+    background-color: blue;
+}
