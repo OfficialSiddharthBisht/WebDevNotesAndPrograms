@@ -1,0 +1,101 @@
+.minMax{
+    display: flex;
+    margin-top: 2%;
+}
+.MIN h1{
+    background-color: red;
+    border: 2px solid black;
+    padding: 25px;
+    margin: auto;
+}
+.MAX h1{
+    background-color: green;
+    border: 2px solid black;
+    padding: 25px;
+    margin: auto;
+}
+.MIN{
+    width: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.MAX{
+    width: auto;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.score{
+    text-align: center;
+    background-color: grey;
+    border: 4px solid black;
+    padding: 25px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.buttons{
+    display: grid;
+    grid-template: "a b c"
+                   "d e f"
+                   "g h i"
+                   "j j j";
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+.buttons h2{
+    border: 2px solid black;
+    margin-left:30%;
+    margin-right: 30%;
+    padding: 15px;
+    text-align: center;
+}
+.buttons h2:nth-child(odd){
+    background-color: green;
+}
+.buttons h2:nth-child(even){
+    background-color: orangered;
+}
+.enter{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+}
+#_1{
+    grid-area: a;
+}
+#_2{
+    grid-area: b;
+}
+#_3{
+    grid-area: c;
+}
+#_4{
+    grid-area: d;
+}
+#_5{
+    grid-area: e;
+    background-color: orangered;
+}
+#_6{
+    grid-area: f;
+}
+#_7{
+    grid-area: g;
+}
+#_8{
+    grid-area: h;
+}
+#_9{
+    grid-area: i;
+}
+#_0{
+    background-color: brown;
+    grid-area: j;
+    text-align: center;
+    margin-left: 42%;
+    margin-right: 42%;
+}
+
