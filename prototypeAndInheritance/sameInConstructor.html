@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>same in constructor</title>
+</head>
+<body>
+    <script>
+        function newsPaper (day , publisher) {
+            this.timestamp = new Date();
+            this.id = parseInt(Math.random() * 10);
+            this.day = day;
+            this.publisher = publisher;
+        }
+
+        // newsPaper.prototype.ad = "FlipKart Big Billion Sale";
+        newsPaper.prototype.ad = function(){
+            console.log("Flipkart Big Billion Days !");
+        }
+
+        let newsPaper1 = new newsPaper("Thursday","The Hindu");
+        console.log(newsPaper1);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasOwnProperty</title>
+</head>
+<body>
+    <script>
+         const a = {
+            name: "sam"
+        }
+        const b = Object.create(a);
+        b.age = 21; 
+        // b.name = "dean"; if we do this then b.name will be dean and not sam cauz it will check on the main object and if it did'nt find the same in prototype then previous prototype .... so on , and if no parent has it then it will show undefined
+        
+        console.log(b.__proto__);
+        console.log(b.__proto__.__proto__); 
+        console.log(b.__proto__.__proto__.__proto__);
+        console.log(typeof(b.__proto__.__proto__.__proto__));
+        console.log(b.hasOwnProperty("name")); // like parents property
+        console.log(b.hasOwnProperty("age")); // like own property own blood and sweat
+    </script>
+</body>
+</html>

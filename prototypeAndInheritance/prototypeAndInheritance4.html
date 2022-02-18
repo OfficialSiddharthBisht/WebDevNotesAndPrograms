@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easy</title>
+</head>
+<body>
+    <script>
+        const a = {
+            name: "sam"
+        }
+        const b = Object.create(a);
+        b.age = 21;
+        
+        console.log(b.__proto__); // b is made of a
+        console.log(b.__proto__.__proto__); // a is made of proto (object)
+        console.log(b.__proto__.__proto__.__proto__); // null cauz it have to end somewhere
+        console.log(typeof(b.__proto__.__proto__.__proto__));
+        // everyting in js in an object - > thats how js is build
+    </script>
+</body>
+</html>

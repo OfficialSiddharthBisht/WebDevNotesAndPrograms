@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype And Inheritance</title>
+</head>
+<body>
+    <script>
+    const cat = {
+        legs: 4,
+        tail : true,
+        whiskers :true,
+        claws : "sharp",
+    }
+
+    const Tiger = {
+        // evertything of cat + <-- repetation 
+        speed: 60,
+        weight : 60,
+        climb : false,
+    }
+
+    const Lion = Object.create(cat);
+    // the property of cat will be availabe inside prototype of Lion <- Object have some special room of object where some properties and methods are stored called prototype <- we are able to hide methods and properties inside this prototype
+
+    Lion.speed = 50;
+    Lion.weight = 100,
+    Lion.climb = false;
+    console.log(Lion);
+
+    </script>
+</body>
+</html>
