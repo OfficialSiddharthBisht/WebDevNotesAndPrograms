@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box = flexible + box</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+        justify-content: center;  /* All the tags to center*/
+        justify-content: space-between; /* Will have even space excluding start and end */
+        justify-content: space-evenly; /* Will have even space including start and end*/
+        flex-direction: row;
+        flex-direction: column;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        flex-direction: row;
+
+        height: 400px;
+        width: 100%;
+        border: 2px solid black;
+    }
+    .item{
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        background-color: 2px solid red;
+        margin: 5px;
+        padding: 2px;
+    }
+    #item-1{
+        background-color: aqua;
+        /* Flex item of higher order will be shifted to the last of flexbox */
+        order: 3;
+         /*flex- grow N will take the space of N flex items but when we minimise it
+         will shrink and take the space of only 1 item  */
+        flex-grow: 2; 
+    }
+    #item-2{
+        flex-shrink: 3;
+    }
+
+</style>
+<body>
+    <h2>This is flexbox page</h2>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+</html>
