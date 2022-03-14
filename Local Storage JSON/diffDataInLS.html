@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Different Data In Local Storage</title>
+</head>
+<body>
+    <h2>Data in Local Storage</h2>
+    <script>
+        let arr = [1 , 2 , 3, 4];
+        let obj = {"name":"Siddharth"};
+        localStorage.setItem("MyArr",arr);
+        localStorage.setItem("MyObj",obj);
+        /*These Two Methods will not show the array and the object as data
+        but local storage can handle any valid data therefore how can we do
+        that ? --> JSON */
+
+    </script>
+</body>
+</html>
