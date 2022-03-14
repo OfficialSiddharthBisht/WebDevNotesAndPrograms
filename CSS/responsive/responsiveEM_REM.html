@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to make a website responsive</title>
+</head>
+<style>
+    html{
+        font-size: 25px;
+    }
+    .container{
+        font-size: 10px;
+    }
+    h2{
+        text-align: center;
+    }
+    #second{
+        /* em for font size means - 
+        if 2em and parent font size is 10 px then it will take its
+        font size as 2 times 10 px */
+        font-size: 2em;  
+        /* 2 X 10 of parent  */
+    }
+    #third{
+        font-size: 3rem;
+        /* takes the height of the base i.e html element here 
+        3 rem = 3 X 25px of html = 75px  */
+    }
+</style>
+<body>
+    <div class="container">
+        <h2 id="first">Heading 1</h2>
+        <h2 id="second">Heading 2</h2>
+        <h2 id="third">Heading 3</h2>
+    </div>
+</body>
+</html>
