@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z - index </title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+        #box1{
+            height: 200px;
+            z-index: -35;
+            position: relative;
+            background-color: rebeccapurple;
+        }
+        #box2{
+            position: relative;
+            z-index: -1;
+            /* If we set visibility as hidden then it will hide the div or that tag but the space will be saved for it */
+            /* visibility: hidden; */
+            background-color: aqua;
+        }
+        #box3{
+            /* If we set display as none then it will hide that tag + its space will not be saved  */
+            /* display: none; */
+            background-color: cornflowerblue;
+        }
+        #box4{
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
